@@ -1,0 +1,264 @@
+*{
+    margin:0;
+    padding:0;
+}
+
+.chartcontainer{
+    display: flex;
+    width:1280px;
+    margin: 0 auto;
+    font-family: 'Roboto', sans-serif;
+}
+
+.left-chartcontainer{
+    width:475px;
+    height:800px;
+    background-color: #003164;
+    padding-left: 85px;
+    &-pagelist{
+        display: flex;
+        flex-direction: column;
+        padding-top:48px;
+        padding-bottom: 373px;
+        height: 204px;
+        justify-content: space-between;
+        color: rgb(59, 89, 127);
+        li{
+            width:365px;
+            display:flex;
+            list-style: none;
+        }
+        i{
+            font-size: 36px;
+            cursor: pointer;  
+        }
+        span{
+            font-size: 36px;
+            font-weight: bold;
+            margin-left: 20px;  
+            cursor: pointer;  
+        }
+        &-mainpage{
+            color: rgb(255, 67, 132);
+        }
+    }
+    &-clockarea{
+        width:350px;
+        height:175px;
+        border-top-left-radius:350px;
+        border-top-right-radius:350px;
+        background-color: #FFEDF7;
+        position: relative;
+        &-circleoutborder{
+            position: absolute;
+            width: 136px;
+            height: 136px;
+            bottom: 104px;
+            right: 106px;
+            border-radius: 55%;
+            background-color: #003164;
+        }
+        &-circleborder{
+            position: absolute;
+            width: 116px;
+            height: 116px;
+            bottom: 110px;
+            right: 111px;
+            border: 4px solid #FF4384;
+            border-radius: 55%;
+            background-color: #003164;
+        }
+        &-circle{
+            position: absolute;
+            width: 96px;
+            height: 96px;
+            bottom: 124px;
+            right: 125px;
+            background-color: #FF4384;
+            border-radius: 55%;
+        }
+        &-playready i{
+            position: absolute;
+            left: 150px;
+            bottom: 143px;
+            font-size: 57px;
+            color: white;
+            cursor: pointer;
+        }
+        &-content{
+            padding-top: 67px;
+            text-align: center;
+            .time{
+                font-size:64px;
+                color:#FF4384;
+            }
+            p{
+                color:#003164;
+            }
+        }
+    }
+}
+
+.right-chartcontainer{
+    width:720px;
+    height:800px;
+    background-color: #003164;
+    &-content{
+        width:445px;
+        height:755px;
+        padding-top: 45px;
+        position: relative;
+        &-todobody{
+            width:445px;
+            height:645px;
+            &-todotitle{
+                height: 44px;
+                width: 100%;
+                box-sizing: border-box;
+                background-color: rgba(255,255,255,.2);
+                padding: 8px 16px;
+                font-size: 24px;
+                color: #fff;
+                font-weight: bolder;
+                display: flex;
+                align-items: center;
+                margin-bottom: 16px;
+                cursor: pointer;
+                .charttitle{
+                    padding-right: 52px;
+                }
+                i{
+                    padding-left: 6px;
+                    padding-right: 6px;
+                }
+            }
+            &-totalpatato{
+                width:100%;
+                height:157px;
+                color:#3b597f;
+                display: flex;
+                .totalpatato-today,.totalpatato-week{
+                    width:50%;
+                    height:85px;
+                    .quatity{
+                        color:#FF4384;
+                        font-size:64px; 
+                    }
+                    a{
+                    color:white;
+                    display: block;
+                    }
+                }  
+                .totalpatato-week{
+                    padding-left: 18%;
+                }            
+            }
+            &-graph{
+                width:420px;
+                height:273px;
+                border:solid 1px white;
+                border-top:none;
+                border-right:none;
+                margin-left: 23px;
+                margin-top: 23px;
+                position: relative;
+                .row{
+                    position: absolute;
+                    right:430px;
+                    list-style: none;
+                    color:white;
+                    li{
+                        height: 45px;
+                    }
+                }
+                .col{
+                    position: absolute;
+                    list-style: none;
+                    color:white;
+                    top: 282px;
+                    left: 36px;
+                    li{
+                        float:left; 
+                        width:54px; 
+                    }
+                }
+                .square1{   
+                    background-color: #FFFFFF;
+                    width: 30px;
+                    height: 174px;
+                    position: absolute;
+                    top: 100px;
+                    left: 30px;
+                }
+                .square2{
+                    background-color:#FFFFFF;
+                    width: 30px;
+                    height: 128px;
+                    position: absolute;
+                    top: 145px;
+                    left: 86px;
+                }
+                .square3{   
+                    background-color: #FFFFFF;
+                    width: 30px;
+                    height: 174px;
+                    position: absolute;
+                    top: 100px;
+                    left: 140px;
+                }
+                .square4{   
+                    background-color: #FFFFFF;
+                    width: 30px;
+                    height: 84px;
+                    position: absolute;
+                    top: 190px;
+                    left: 194px;
+                }
+                .square5{
+                    background-color:#FFFFFF;
+                    width: 30px;
+                    height: 128px;
+                    position: absolute;
+                    top: 145px;
+                    left: 250px;
+                }
+                .square6{
+                    background-color: #FFFFFF;
+                    width: 30px;
+                    height: 36px;
+                    position: absolute;
+                    top: 238px;
+                    left: 303px;
+                }
+                .square7{
+                    background-color: #FFFFFF;
+                    width: 30px;
+                    height: 206px;
+                    position: absolute;
+                    top: 68px;
+                    left: 358px;
+                }
+            }
+            &-pomo{
+                position: absolute;
+                width: 165px;
+                height: 36px;
+                top: 575px;
+                left: 480px;
+                color: white;
+                writing-mode: vertical-rl;
+                font-family: Futura;
+                font-size: 2.4rem;
+                font-weight: bold;   
+            }
+            .close-button{
+                position: absolute;
+                top: 38px;
+                left: 600px;
+                font-size: 48px;
+                color: white;
+                cursor: pointer;
+            }
+        }
+    }
+}

@@ -1,0 +1,195 @@
+*{
+    margin:0;
+    padding:0;
+}
+
+.container{
+    display: flex;
+    width:1280px;
+    margin: 0 auto;
+    font-family: 'Roboto', sans-serif;
+}
+
+.left-container{
+    width: 830px;
+    height:800px;
+    background-color: #FFEDF7;
+    &-content{
+        width: 445px;
+        height:800px;
+        padding-left: 85px;
+        padding-top: 45px;
+        &-inputarea{
+            width: 475px;
+            height:201px;
+            display: flex;
+            input{
+                width:439px;
+                height:56px;
+                padding-left:16px;
+                color: #FF4384;
+                border: none;
+                font-family: 'Roboto', sans-serif;
+            }
+            i{
+                color: #FF4384;
+                position: relative;
+                right: 36px;
+                top: 16px;
+            }
+            ::placeholder {
+                color: #FF4384;
+            } 
+        }
+        &-firsttodo{
+            width: 100%;
+            height:55px;
+            display: flex;
+            position: relative;
+            &-precircle{
+                border-radius: 48px;
+                width: 48px;
+                height: 50px;
+                border: 2px solid #003164;
+                margin-right: 15px;
+                display: inline-block;
+            }
+            &-title{
+                font-size:24px;
+            }
+            &-nextcircle{
+                border-radius: 48px;
+                width: 12px;
+                height: 12px;
+                border: 1px solid #FF4384;
+                display: inline-block;
+                position: absolute;
+                left: 66px;
+                top: 35px;
+            }
+        }
+        &-time{
+            width: 454px;
+            height:300px;
+            text-align: center;
+            span{
+                font-size:176px;
+                color: #FF4384;
+            }
+        }
+        &-moretodo{
+            width:100%;
+            height:199px;
+            &-item{
+                width:454px;
+                height:32px;
+                display: flex;
+                margin-bottom: 10px;
+                border-bottom: 1px solid #707070;
+                .content{
+                    width:411px;
+                }
+                span{
+                    border-radius: 48px;
+                    width: 16px;
+                    height: 16px;
+                    border: 2px solid #003164;
+                    display: inline-block;
+                }
+                a{
+                    margin-left: 4px;
+                }
+                i{
+                    cursor: pointer;
+                }
+            }
+            &-moreitem{
+                width:454px;
+                height:32px;
+                display: flex;
+                justify-content: flex-end;
+                color:#FF4384;
+                font-size:16px;
+                span{
+                    cursor: pointer;
+                }
+            }
+        }
+    }
+} 
+
+.right-container{
+    width: 450px;
+    height:800px;
+    background-color: #003164;
+    position: relative;
+    &-circleborder {
+        position: absolute;
+        width: 540px;
+        height: 540px;
+        top: 132px;
+        right:175px;
+        border: 4px solid #FF4384;
+        border-radius: 55%;
+    }
+
+    &-circle {
+        position: absolute;
+        width: 520px;
+        height: 520px;
+        top: 145px;
+        right:190px;
+        background-color: #FF4384;
+        border-radius: 55%;
+    }
+
+    &-stopdot {
+        position: absolute;
+        width: 16px;
+        height: 16px;
+        top: 428px;
+        left: 60px;
+        background-color: white;
+        cursor: pointer;    
+    }
+
+    &-player i {
+        font-size: 96px;
+        color: #ffffff;
+        position: absolute;
+        cursor: pointer;
+        top: 360px;
+        right: 400px;
+    }
+
+    &-pagelist{
+        display: flex;
+        flex-direction: column;
+        padding-top:48px;
+        height: 204px;
+        justify-content: space-between;
+        li{
+            width:365px;
+            display:flex;
+            justify-content: flex-end;
+            list-style: none;
+        }
+        i{
+            font-size: 36px;
+            color: #ffffff;
+            cursor: pointer;
+        }
+    }
+    &-pomo{
+        position: absolute;
+        width: 165px;
+        height: 36px;
+        top: 575px;
+        right:80px;
+        color: white;
+        writing-mode: vertical-rl;
+        font-family: Futura;
+        font-size: 2.4rem;
+        font-weight: bold;   
+    }
+}

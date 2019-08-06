@@ -1,0 +1,322 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.chartcontainer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 1280px;
+  margin: 0 auto;
+  font-family: 'Roboto', sans-serif;
+}
+
+.left-chartcontainer {
+  width: 475px;
+  height: 800px;
+  background-color: #003164;
+  padding-left: 85px;
+}
+
+.left-chartcontainer-pagelist {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  padding-top: 48px;
+  padding-bottom: 373px;
+  height: 204px;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  color: #3b597f;
+}
+
+.left-chartcontainer-pagelist li {
+  width: 365px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  list-style: none;
+}
+
+.left-chartcontainer-pagelist i {
+  font-size: 36px;
+  cursor: pointer;
+}
+
+.left-chartcontainer-pagelist span {
+  font-size: 36px;
+  font-weight: bold;
+  margin-left: 20px;
+  cursor: pointer;
+}
+
+.left-chartcontainer-pagelist-mainpage {
+  color: #ff4384;
+}
+
+.left-chartcontainer-clockarea {
+  width: 350px;
+  height: 175px;
+  border-top-left-radius: 350px;
+  border-top-right-radius: 350px;
+  background-color: #FFEDF7;
+  position: relative;
+}
+
+.left-chartcontainer-clockarea-circleoutborder {
+  position: absolute;
+  width: 136px;
+  height: 136px;
+  bottom: 104px;
+  right: 106px;
+  border-radius: 55%;
+  background-color: #003164;
+}
+
+.left-chartcontainer-clockarea-circleborder {
+  position: absolute;
+  width: 116px;
+  height: 116px;
+  bottom: 110px;
+  right: 111px;
+  border: 4px solid #FF4384;
+  border-radius: 55%;
+  background-color: #003164;
+}
+
+.left-chartcontainer-clockarea-circle {
+  position: absolute;
+  width: 96px;
+  height: 96px;
+  bottom: 124px;
+  right: 125px;
+  background-color: #FF4384;
+  border-radius: 55%;
+}
+
+.left-chartcontainer-clockarea-playready i {
+  position: absolute;
+  left: 150px;
+  bottom: 143px;
+  font-size: 57px;
+  color: white;
+  cursor: pointer;
+}
+
+.left-chartcontainer-clockarea-content {
+  padding-top: 67px;
+  text-align: center;
+}
+
+.left-chartcontainer-clockarea-content .time {
+  font-size: 64px;
+  color: #FF4384;
+}
+
+.left-chartcontainer-clockarea-content p {
+  color: #003164;
+}
+
+.right-chartcontainer {
+  width: 720px;
+  height: 800px;
+  background-color: #003164;
+}
+
+.right-chartcontainer-content {
+  width: 445px;
+  height: 755px;
+  padding-top: 45px;
+  position: relative;
+}
+
+.right-chartcontainer-content-todobody {
+  width: 445px;
+  height: 645px;
+}
+
+.right-chartcontainer-content-todobody-todotitle {
+  height: 44px;
+  width: 100%;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  background-color: rgba(255, 255, 255, 0.2);
+  padding: 8px 16px;
+  font-size: 24px;
+  color: #fff;
+  font-weight: bolder;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-bottom: 16px;
+  cursor: pointer;
+}
+
+.right-chartcontainer-content-todobody-todotitle .charttitle {
+  padding-right: 52px;
+}
+
+.right-chartcontainer-content-todobody-todotitle i {
+  padding-left: 6px;
+  padding-right: 6px;
+}
+
+.right-chartcontainer-content-todobody-totalpatato {
+  width: 100%;
+  height: 157px;
+  color: #3b597f;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.right-chartcontainer-content-todobody-totalpatato .totalpatato-today, .right-chartcontainer-content-todobody-totalpatato .totalpatato-week {
+  width: 50%;
+  height: 85px;
+}
+
+.right-chartcontainer-content-todobody-totalpatato .totalpatato-today .quatity, .right-chartcontainer-content-todobody-totalpatato .totalpatato-week .quatity {
+  color: #FF4384;
+  font-size: 64px;
+}
+
+.right-chartcontainer-content-todobody-totalpatato .totalpatato-today a, .right-chartcontainer-content-todobody-totalpatato .totalpatato-week a {
+  color: white;
+  display: block;
+}
+
+.right-chartcontainer-content-todobody-totalpatato .totalpatato-week {
+  padding-left: 18%;
+}
+
+.right-chartcontainer-content-todobody-graph {
+  width: 420px;
+  height: 273px;
+  border: solid 1px white;
+  border-top: none;
+  border-right: none;
+  margin-left: 23px;
+  margin-top: 23px;
+  position: relative;
+}
+
+.right-chartcontainer-content-todobody-graph .row {
+  position: absolute;
+  right: 430px;
+  list-style: none;
+  color: white;
+}
+
+.right-chartcontainer-content-todobody-graph .row li {
+  height: 45px;
+}
+
+.right-chartcontainer-content-todobody-graph .col {
+  position: absolute;
+  list-style: none;
+  color: white;
+  top: 282px;
+  left: 36px;
+}
+
+.right-chartcontainer-content-todobody-graph .col li {
+  float: left;
+  width: 54px;
+}
+
+.right-chartcontainer-content-todobody-graph .square1 {
+  background-color: #FFFFFF;
+  width: 30px;
+  height: 174px;
+  position: absolute;
+  top: 100px;
+  left: 30px;
+}
+
+.right-chartcontainer-content-todobody-graph .square2 {
+  background-color: #FFFFFF;
+  width: 30px;
+  height: 128px;
+  position: absolute;
+  top: 145px;
+  left: 86px;
+}
+
+.right-chartcontainer-content-todobody-graph .square3 {
+  background-color: #FFFFFF;
+  width: 30px;
+  height: 174px;
+  position: absolute;
+  top: 100px;
+  left: 140px;
+}
+
+.right-chartcontainer-content-todobody-graph .square4 {
+  background-color: #FFFFFF;
+  width: 30px;
+  height: 84px;
+  position: absolute;
+  top: 190px;
+  left: 194px;
+}
+
+.right-chartcontainer-content-todobody-graph .square5 {
+  background-color: #FFFFFF;
+  width: 30px;
+  height: 128px;
+  position: absolute;
+  top: 145px;
+  left: 250px;
+}
+
+.right-chartcontainer-content-todobody-graph .square6 {
+  background-color: #FFFFFF;
+  width: 30px;
+  height: 36px;
+  position: absolute;
+  top: 238px;
+  left: 303px;
+}
+
+.right-chartcontainer-content-todobody-graph .square7 {
+  background-color: #FFFFFF;
+  width: 30px;
+  height: 206px;
+  position: absolute;
+  top: 68px;
+  left: 358px;
+}
+
+.right-chartcontainer-content-todobody-pomo {
+  position: absolute;
+  width: 165px;
+  height: 36px;
+  top: 575px;
+  left: 480px;
+  color: white;
+  -webkit-writing-mode: vertical-rl;
+      -ms-writing-mode: tb-rl;
+          writing-mode: vertical-rl;
+  font-family: Futura;
+  font-size: 2.4rem;
+  font-weight: bold;
+}
+
+.right-chartcontainer-content-todobody .close-button {
+  position: absolute;
+  top: 38px;
+  left: 600px;
+  font-size: 48px;
+  color: white;
+  cursor: pointer;
+}
+/*# sourceMappingURL=chart.css.map */
