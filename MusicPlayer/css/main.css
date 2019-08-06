@@ -1,0 +1,394 @@
+@charset "UTF-8";
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-family: 'Lato', sans-serif;
+  letter-spacing: 1px;
+}
+
+body {
+  margin: 10px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  height: 800px;
+}
+
+.material-icons {
+  cursor: pointer;
+}
+
+.player {
+  background-color: #000000;
+  width: 1000px;
+  height: 520px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.player .library {
+  width: 200px;
+  height: 460px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.player .library .logo {
+  color: #00F3FF;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  position: relative;
+}
+
+.player .library .logo .search-icon {
+  position: absolute;
+  z-index: 10;
+  top: 54px;
+  left: 5px;
+  font-size: 16px;
+}
+
+.player .library input {
+  width: 90px;
+  height: 20px;
+  border: 1px solid #00F3FF;
+  border-radius: 5px;
+  background-color: #000000;
+  position: relative;
+  right: 15px;
+  color: white;
+  padding-left: 20px;
+  /*::-webkit-input-placeholder{
+                font-size: 6px;
+                -webkit-transform : scale(0.5); 
+                display:inline-block;
+            }*/
+}
+
+.player .library ul {
+  line-height: 23px;
+  color: #FFFFFF;
+  margin: 15px;
+}
+
+.player .library li:nth-child(1) {
+  color: #00F3FF;
+  font-size: 14px;
+}
+
+.player .playsong {
+  width: 600px;
+  height: 460px;
+  background-image: url("../img/component.png");
+}
+
+.player .playsong .albumname {
+  width: 600px;
+  height: 242px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  padding-right: 30px;
+  position: relative;
+}
+
+.player .playsong .albumname h1 {
+  font-size: 28px;
+  color: white;
+}
+
+.player .playsong .albumname p {
+  font-size: 10px;
+  margin: 2px;
+  text-shadow: 1px 1px 1px #FFFFFF;
+}
+
+.player .playsong .albumname button {
+  width: 70px;
+  height: 20px;
+  background: none;
+  border: 1px solid white;
+  border-radius: 3px;
+  color: white;
+  font-size: 8px;
+  position: absolute;
+  right: 30px;
+  bottom: 20px;
+}
+
+.player .playsong .albumplaying {
+  width: 600px;
+  height: 218px;
+  background: rgba(0, 0, 0, 0.6);
+  padding-left: 10px;
+}
+
+.player .playsong .albumplaying .title {
+  color: #ffffff;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  position: relative;
+}
+
+.player .playsong .albumplaying .title .favarite-icon {
+  position: absolute;
+  right: 220px;
+  top: 20px;
+  font-size: 16px;
+}
+
+.player .playsong .albumplaying .title .stop-icon {
+  position: absolute;
+  right: 195px;
+  top: 20px;
+}
+
+.player .playsong .albumplaying .title .content p {
+  padding: 5px 10px;
+  font-size: 14px;
+}
+
+.player .playsong .albumplaying .playlist {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  color: white;
+}
+
+.player .playsong .albumplaying .playlist ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: 400px;
+}
+
+.player .playsong .albumplaying .playlist ul li {
+  border-bottom: 1px solid gray;
+  font-size: 10px;
+  padding: 3px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.player .playsong .albumplaying .playlist ul li .favarite-icon {
+  font-size: 12px;
+  padding: 0px 8px;
+}
+
+.player .playsong .albumplaying .playlist ul li .stop-icon {
+  width: 12px;
+}
+
+.player .playsong .albumplaying h1 {
+  display: block;
+  font-size: 12px;
+  color: white;
+  padding: 10px 10px;
+}
+
+.player .mylist {
+  width: 200px;
+  height: 460px;
+  color: #ffffff;
+}
+
+.player .mylist .namearea {
+  width: 200px;
+  height: 60px;
+  padding: 10px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+.player .mylist .namearea .name-icon {
+  font-size: 40px;
+}
+
+.player .mylist .create-playlist {
+  height: 400px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.player .mylist .create-playlist .add-icon {
+  color: #00F3FF;
+}
+
+.player .mylist .create-playlist h2 {
+  font-size: 15px;
+  padding: 0px 5px 45px;
+}
+
+.player .footer {
+  width: 1000px;
+  height: 60px;
+  color: #FFFFFF;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+}
+
+.player .footer .album-content {
+  font-size: 10px;
+}
+
+.player .footer .playingbar {
+  font-size: 10px;
+}
+
+.player .footer .playingbar span {
+  display: inline-block;
+}
+
+.player .footer .playingbar .music-slider {
+  position: relative;
+}
+
+.player .footer .playingbar .slider-btn {
+  cursor: pointer;
+  top: 4px;
+  left: 0%;
+  position: absolute;
+  height: 10px;
+  width: 10px;
+  border-radius: 50%;
+  background: #00F3FF;
+}
+
+.player .footer .music-control-slider {
+  cursor: pointer;
+  height: 2px;
+  width: 400px;
+  border-radius: 8px;
+  overflow: hidden;
+  background-color: #00F3FF;
+}
+
+.player .footer .volumbar {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.player .footer .volumbar .volum-slider {
+  position: relative;
+}
+
+.player .footer .volumbar .volum-slider .volume-control-slider {
+  position: absolute;
+  cursor: pointer;
+  height: 2px;
+  width: 90px;
+  top: 8px;
+  left: 5px;
+  border-radius: 8px;
+  overflow: hidden;
+  background-color: #00F3FF;
+}
+
+.player .footer .volumbar span {
+  display: block;
+}
+
+.player .footer .volumbar input[type="range"] {
+  -webkit-appearance: none;
+  overflow: hidden;
+  /* 限定範圍 */
+  width: 100px;
+  height: 14px;
+  outline: none;
+  /* 避免點選會有藍線或虛線 */
+  background: none;
+}
+
+.player .footer .volumbar input[type="range"]::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  position: relative;
+  /* 設為相對位置，為了前後區塊的絕對位置而設定 */
+  width: 10px;
+  height: 10px;
+  cursor: pointer;
+  background: #00F3FF;
+  border-radius: 50%;
+  -webkit-transition: .2s;
+  transition: .2s;
+  /* 點選放大時候的漸變時間 */
+}
+
+.playing {
+  background-color: #666666;
+  -webkit-transition: background-color 1s 1s ease;
+  transition: background-color 1s 1s ease;
+}
+/*# sourceMappingURL=main.css.map */

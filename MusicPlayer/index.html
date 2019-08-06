@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>music player</title>
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/reset.css">
+    <!--material icons-->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <!--Jquery-->
+    <script
+    src="https://code.jquery.com/jquery-2.2.4.js"
+    integrity="sha256-iT6Q9iMJYuQiMWNd9lDyBUStIq/8PuOW33aOqmvFpqI="
+    crossorigin="anonymous"></script>
+</head>
+<body>
+    <div class="player">
+        <div class="library">
+            <logo class="logo">
+                <img src="../img/headphones.svg">
+                MusicPlayer
+                <i class="material-icons search-icon" >search</i>
+            </logo>
+            
+            <input type="text" placeholder="Album Artists">
+            <ul>
+                <li>Your LIBRARY</li>
+                <li>Playlists</li>
+                <li>Artists</li>
+                <li>Album</li>
+                <li>Songs</li>
+            </ul>
+            <ul>
+                <li>Your LIBRARY</li>
+                <li>Playlists</li>
+                <li>Artists</li>
+                <li>Album</li>
+                <li>Songs</li>
+            </ul>
+            <img src="../img/LOVE YA!.png">
+        </div>
+        <div class="playsong">
+            <div class="albumname">
+                <h1>KYUKOH</h1>
+                <p>Followers</p>
+                <p>30,000,000</p>
+                <button>FOLLOW</button>
+            </div>
+            <div class="albumplaying">
+                <h1>Album</h1>
+                <div class="title">
+                    <img src="../img/Album 24.png">
+                    <div class="content">
+                        <p>2018</p>
+                        <p>24 :How to find true love and happiness</p>
+                    </div>     
+                    <i class="material-icons favarite-icon" >favorite_border</i> 
+                    <img src="../img/Ellipsis.svg" class="stop-icon">
+                </div>
+                <div class="playlist">
+                    <ul>
+                        <li class="song" url="../music/Ill Never Love Again.mp3">#1 Ill Never Love Again<span class="time-area">04:53<i class="material-icons favarite-icon">favorite_border</i><img src="../img/Ellipsis.svg" class="stop-icon"></span></li>
+                        <li class="song" url="../music/Graduation.mp3">#2 Graduation<span class="time-area">04:34<i class="material-icons favarite-icon" >favorite_border</i><img src="../img/Ellipsis.svg" class="stop-icon"></span></li>
+                        <li class="song" url="../music/Ava Max - So Am I.mp3">#3 Ava Max - So Am I<span class="time-area">03:13<i class="material-icons favarite-icon" >favorite_border</i><img src="../img/Ellipsis.svg" class="stop-icon"></span></li>
+                        <li class="song" url="../music/Lady Gaga,Bradley Cooper.mp3">#4 Lady Gaga,Bradley Cooper<span class="time-area">03:16<i class="material-icons favarite-icon" >favorite_border</i><img src="../img/Ellipsis.svg" class="stop-icon"></span></li>
+                        <li class="song" url="../music/Calum Scott - You Are The Reason.mp3">#5 Calum Scott - You Are The Reason<span class="time-area">03:24<i class="material-icons favarite-icon" >favorite_border</i><img src="../img/Ellipsis.svg" class="stop-icon"></span></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="mylist">
+            <div class="namearea">
+                <i class="material-icons name-icon" >account_circle</i>
+                <p>Name</p>
+                <i class="material-icons">keyboard_arrow_down</i>
+                <img src="../img/Button-note.svg">
+                <img src="../img/Button-note.svg">
+            </div>
+            <div class="create-playlist">
+                <h2>Create Your Own Playlists.</h2>
+                <i class="material-icons add-icon">add_circle_outline</i>
+            </div>
+        </div>
+        <div class="footer">
+            <div class="album-content">
+                <p>Hyukoh - LOVE YA!</p>
+                <p>2018</p>
+            </div>
+            <div class="control">
+                <i class="material-icons" id="shuffleImage">shuffle</i>
+                <i class="material-icons" id="backImage">skip_previous</i>
+                <i class="material-icons" id="swapImage">play_circle_outline</i>
+                <i class="material-icons" id="nextImage">skip_next</i>
+                <i class="material-icons" id="repeatImage">repeat</i>
+            </div>
+            <div class="playingbar">
+                <span id="current-time">00:00</span>
+                <span class="music-slider">
+                    <span class="music-control-slider"></span>
+                    <span class="slider-btn" id="playing-btn"></span>
+                </span>
+                <span id="totalTime">00:00</span>
+            </div>
+            <div class="volumbar"> 
+                <i class="material-icons" id="volumnmute">volume_up</i>
+                <span class="volum-slider">
+                    <span class="volume-control-slider"></span>
+                    <input name="range" type="range" min="0" max="100" step="1" value="100" id="range">
+                </span>
+            </div>
+        </div>  
+    </div>
+    <script type="text/javascript" src="js/all.js"></script>
+</body>
+</html>

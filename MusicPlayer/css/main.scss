@@ -1,0 +1,277 @@
+* {
+    box-sizing: border-box;
+    font-family: 'Lato', sans-serif;
+    letter-spacing: 1px;
+}
+
+body {
+    margin: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height:800px;
+}
+
+$playerheight:460px;
+.material-icons{
+    cursor: pointer;
+}
+
+.player{
+    background-color: #000000;
+    width: 1000px;
+    height:520px;
+    display: flex;
+    flex-wrap:wrap;
+    .library{
+        width: 200px;
+        height: $playerheight;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        .logo{
+            color:#00F3FF;
+            padding-top:15px;
+            padding-bottom: 15px;
+            position: relative;
+            .search-icon{
+                position: absolute;
+                z-index: 10;
+                top:54px;
+                left: 5px;
+                font-size:16px;
+            }
+        }
+        input{
+            width: 90px;
+            height: 20px;
+            border:1px solid #00F3FF;
+            border-radius: 5px;
+            background-color: #000000;
+            position: relative;
+            right: 15px;;
+            color: white;
+            padding-left:20px;
+            /*::-webkit-input-placeholder{
+                font-size: 6px;
+                -webkit-transform : scale(0.5); 
+                display:inline-block;
+            }*/
+        }
+        ul{
+            line-height: 23px;
+            color:#FFFFFF;
+            margin:15px;
+        }
+        li:nth-child(1){
+            color:#00F3FF;
+            font-size: 14px;
+        }
+    }
+    .playsong{
+        width: 600px;
+        height:$playerheight;
+        background-image: url('../img/component.png');
+        .albumname{
+            width: 600px;
+            height: 242px;
+            display: flex;
+            align-items: flex-end;
+            justify-content: center;
+            flex-direction: column;
+            padding-right:30px;
+            position: relative;
+            h1{
+                font-size: 28px;
+                color:white;         
+            }
+            p{
+                font-size:10px;
+                margin: 2px;
+                text-shadow:1px 1px 1px #FFFFFF;
+            }
+            button{
+                width: 70px;
+                height: 20px;
+                background: none;
+                border:1px solid white;
+                border-radius: 3px;
+                color:white;
+                font-size:8px;
+                position: absolute;
+                right: 30px;
+                bottom: 20px;
+            }
+        }
+        .albumplaying{
+            width: 600px;
+            height: 218px;
+            background:rgba(0,0,0,0.6);
+            padding-left: 10px;
+            .title{
+                color:#ffffff;
+                display: flex;
+                position: relative;
+                .favarite-icon{
+                    position: absolute;
+                    right: 220px;
+                    top: 20px;
+                    font-size: 16px;
+                }
+                .stop-icon{
+                    position: absolute;
+                    right: 195px;
+                    top:20px;
+                    
+                }
+                .content p{
+                    padding: 5px 10px;
+                    font-size:14px;
+                }
+            }
+            .playlist{
+                display: flex;
+                justify-content: center;
+                color:white;
+                ul{
+                    display: flex;
+                    flex-direction: column;
+                    width: 400px;
+                    li{
+                        .favarite-icon{
+                            font-size: 12px;
+                            padding: 0px 8px;
+                        }
+                        .stop-icon{
+                            width:12px;
+                        }
+                        border-bottom: 1px solid gray;
+                        font-size: 10px;
+                        padding: 3px;
+                        display: flex;
+                        align-items: center;
+                        justify-content: space-between;
+                    }
+                }
+            }
+            h1{
+                display: block;
+                font-size: 12px;
+                color:white;
+                padding: 10px 10px;
+            }
+        }
+    }
+    .mylist{
+        width: 200px;
+        height: $playerheight;
+        color:#ffffff;
+        .namearea{
+            width: 200px;
+            height: 60px;
+            padding: 10px;
+            display: flex;
+            align-items: center;
+            justify-content: space-around;
+            .name-icon{
+                font-size: 40px;
+            }
+        }
+        .create-playlist{
+            height: 400px;
+            display: flex;
+            align-items: center;
+            flex-direction: column;
+            justify-content: center;
+            .add-icon{
+                color: #00F3FF;
+            }
+            h2{
+                font-size: 15px;
+                padding: 0px 5px 45px;
+            }
+        }
+    }
+    .footer{
+        width: 1000px;
+        height: 60px;
+        color:#FFFFFF;
+        display: flex;
+        align-items: center;
+        justify-content: space-evenly;
+        .album-content{
+            font-size:10px;
+        }
+        .playingbar{
+            font-size: 10px;
+            span{
+                display: inline-block;
+            }
+            .music-slider{
+                position: relative;
+            }
+            .slider-btn{
+                cursor: pointer;
+                top:4px;
+                left:0%;
+                position: absolute;
+                height: 10px;
+                width: 10px;
+                border-radius: 50%;
+                background: #00F3FF;
+            }
+        }
+        .music-control-slider{
+            cursor: pointer;
+            height: 2px;
+            width: 400px;
+            border-radius: 8px;
+            overflow: hidden;
+            background-color: #00F3FF;
+        }
+        .volumbar{
+            display: flex;
+            align-items: center;
+            .volum-slider{
+                position: relative;
+                .volume-control-slider{
+                    position: absolute;
+                    cursor: pointer;
+                    height: 2px;
+                    width: 90px;
+                    top:8px;
+                    left:5px;
+                    border-radius: 8px;
+                    overflow: hidden;
+                    background-color: #00F3FF;
+                }
+            }
+            span{
+                display: block;
+            }
+            input[type="range"]{
+                -webkit-appearance: none;
+                overflow:hidden;     /* 限定範圍 */
+                width:100px;
+                height:14px;
+                outline : none;      /* 避免點選會有藍線或虛線 */
+                background:none;
+            }
+            input[type="range"]::-webkit-slider-thumb{
+                -webkit-appearance: none;
+                position: relative;    /* 設為相對位置，為了前後區塊的絕對位置而設定 */
+                width:10px;
+                height:10px;
+                cursor: pointer;
+                background:#00F3FF;
+                border-radius:50%;
+                transition:.2s;        /* 點選放大時候的漸變時間 */
+            }
+        }
+    }
+}
+.playing {
+    background-color: #666666;
+    transition:background-color 1s 1s ease;
+}
